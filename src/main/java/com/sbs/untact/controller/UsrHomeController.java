@@ -1,0 +1,16 @@
+package com.sbs.untact.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class UsrHomeController {
+	
+	@RequestMapping("/usr/home/main")
+	@ResponseBody
+	public String showMain() {
+		System.out.println("hi");
+		return "안녕하세요";
+	}
+}
